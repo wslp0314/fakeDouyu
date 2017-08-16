@@ -19,7 +19,7 @@ class LPMainViewController: UITabBarController {
     }
     
     private func addChildVC(vc : String) {
-        //通过 storyName 加入 tabbar
+        //通过 storyName 加入 tabbar 的 根
         let childHome = UIStoryboard(name: vc, bundle: nil).instantiateInitialViewController()!
         addChildViewController(childHome)
     }
