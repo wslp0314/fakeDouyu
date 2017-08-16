@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		524037A31F3C92B5001D5025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524037A21F3C92B5001D5025 /* AppDelegate.swift */; };
-		524037A51F3C92B5001D5025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524037A41F3C92B5001D5025 /* ViewController.swift */; };
 		524037A81F3C92B5001D5025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524037A61F3C92B5001D5025 /* Main.storyboard */; };
 		524037AD1F3C92B5001D5025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524037AB1F3C92B5001D5025 /* LaunchScreen.storyboard */; };
 		524037B51F3C95D0001D5025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524037B41F3C95D0001D5025 /* Assets.xcassets */; };
+		524AE53A1F444933002ADF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524AE5331F444933002ADF26 /* AppDelegate.swift */; };
 		7077247E54DD639704301B52 /* Pods_fakeDouyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C7C117F834C3869FB73D2 /* Pods_fakeDouyu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		239A8123F9F0DEE90EEE2824 /* Pods-fakeDouyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakeDouyu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fakeDouyu/Pods-fakeDouyu.debug.xcconfig"; sourceTree = "<group>"; };
 		5240379F1F3C92B5001D5025 /* fakeDouyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fakeDouyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		524037A21F3C92B5001D5025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		524037A41F3C92B5001D5025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		524037A71F3C92B5001D5025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		524037AC1F3C92B5001D5025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524037AE1F3C92B5001D5025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524037B41F3C95D0001D5025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524AE5331F444933002ADF26 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		853F2021AD8DD3F4F93788DB /* Pods-fakeDouyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fakeDouyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-fakeDouyu/Pods-fakeDouyu.release.xcconfig"; sourceTree = "<group>"; };
 		B96C7C117F834C3869FB73D2 /* Pods_fakeDouyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fakeDouyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,14 +68,69 @@
 		524037A11F3C92B5001D5025 /* fakeDouyu */ = {
 			isa = PBXGroup;
 			children = (
+				524AE5321F444933002ADF26 /* Classes */,
 				524037B41F3C95D0001D5025 /* Assets.xcassets */,
-				524037A21F3C92B5001D5025 /* AppDelegate.swift */,
-				524037A41F3C92B5001D5025 /* ViewController.swift */,
 				524037A61F3C92B5001D5025 /* Main.storyboard */,
 				524037AB1F3C92B5001D5025 /* LaunchScreen.storyboard */,
 				524037AE1F3C92B5001D5025 /* Info.plist */,
 			);
 			path = fakeDouyu;
+			sourceTree = "<group>";
+		};
+		524AE5321F444933002ADF26 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				524AE5331F444933002ADF26 /* AppDelegate.swift */,
+				524AE5371F444933002ADF26 /* Main */,
+				524AE5351F444933002ADF26 /* Home */,
+				524AE5361F444933002ADF26 /* Live */,
+				524AE5341F444933002ADF26 /* Follow */,
+				524AE5381F444933002ADF26 /* Profile */,
+				524AE5391F444933002ADF26 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		524AE5341F444933002ADF26 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		524AE5351F444933002ADF26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		524AE5361F444933002ADF26 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		524AE5371F444933002ADF26 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		524AE5381F444933002ADF26 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		524AE5391F444933002ADF26 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		CDB956767731D1EEE9B4CA35 /* Frameworks */ = {
@@ -212,8 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				524037A51F3C92B5001D5025 /* ViewController.swift in Sources */,
-				524037A31F3C92B5001D5025 /* AppDelegate.swift in Sources */,
+				524AE53A1F444933002ADF26 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
